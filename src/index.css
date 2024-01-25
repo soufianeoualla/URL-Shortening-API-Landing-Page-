@@ -71,7 +71,11 @@ h1 {
     center/cover;
   background-color: var(--Dark-Violet);
   grid-template-columns: 80% 20%;
+ 
+}
+.shorten-link-wrapper{
   transform: translate(0, -8rem);
+  
 }
 
 input {
@@ -131,6 +135,16 @@ footer a:hover {
 .input-error {
   border: 3px solid var(--Red);
 }
+.short-link a{
+  color: var(--Cyan);
+}
+.short-link button{
+  background-color: var(--Cyan);
+}
+.short-link .copied{
+  background-color: var(--Dark-Violet);
+}
+
 
 @media screen and (max-width: 699px) {
   .icon {
