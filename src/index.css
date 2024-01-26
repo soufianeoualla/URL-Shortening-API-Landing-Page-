@@ -163,8 +163,9 @@ footer a:hover {
   .mobile-menu {
     background-color: var(--Dark-Violet);
     top: 35%;
-    left: 44%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 20;
   }
   .mobile-menu a {
     color: white;
