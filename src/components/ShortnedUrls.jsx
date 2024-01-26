@@ -18,16 +18,16 @@ const ShortnedUrls = (props) => {
         reversedShortenedUrl.map((n, index) => (
           <div
             key={n.id}
-            className='results mb-4 px-6 py-4 rounded-lg bg-white flex justify-between items-center'
+            className='results mb-4 px-6 py-4 rounded-lg bg-white flex justify-between items-center sm:grid  sm:p-0'
           >
-            <div className='large-link'>
-              <b className='text-black '>{n.largeLink} </b>
+            <div className='large-link sm:pb-4 sm:p-4'>
+              <b className='text-black sm:w-3/4 sm:text-xs '>{n.largeLink} </b>
             </div>
-            <div className='short-link flex items-center gap-4'>
-              <a href={n.shortLink}>{n.shortLink}</a>
+            <div className='short-link flex items-center gap-4 sm:grid sm:p-4 '>
+              <a className="sm:text-xs" href={n.shortLink}>{n.shortLink}</a>
               <button
                 onClick={() => handleCopy(index)}
-                className={`px-8 py-4 rounded-lg font-bold text-white ${
+                className={`px-8 py-4 rounded-lg font-bold text-white sm:text-xs   ${
                   copy === index ? "copied" : null
                 }`}
               >
